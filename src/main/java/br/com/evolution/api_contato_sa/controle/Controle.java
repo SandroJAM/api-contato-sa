@@ -1,6 +1,7 @@
 package br.com.evolution.api_contato_sa.controle;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +14,7 @@ import br.com.evolution.api_contato_sa.modelo.Contato;
 import br.com.evolution.api_contato_sa.repositorio.Repositorio;
 
 @RestController
+@CrossOrigin(origins = "*") // Porta do Front-End que deve ser liberada, para comunicar com a API no Back-End.
 public class Controle {
  
     @Autowired // Para não objeto instanciar esse objeto em cada rota

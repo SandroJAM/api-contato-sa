@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste CORS</title>
+
+    <script>
+        // Realiza a requisição (Requisição JavaScript Simples)
+        // CORS é uma segurança do navegador: Porta 8080 - 4200 por estar em portas diferentes!
+        fetch('http://localhost:8080')
+
+            // Converte o valor recebido em JSON
+            .then(contatos => contatos.json())
+
+            // Exibindo os Contatos
+            .then(retorno => console.log(retorno))
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
