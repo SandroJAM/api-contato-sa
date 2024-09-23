@@ -14,7 +14,7 @@ import br.com.evolution.api_contato_sa.modelo.Contato;
 import br.com.evolution.api_contato_sa.repositorio.Repositorio;
 
 @RestController
-@CrossOrigin(origins = "*") // Porta do Front-End que deve ser liberada, para comunicar com a API no Back-End.
+@CrossOrigin(origins = "4200") // Porta do Front-End que deve ser liberada, para comunicar com a API no Back-End.
 public class Controle {
  
     @Autowired // Para não objeto instanciar esse objeto em cada rota
